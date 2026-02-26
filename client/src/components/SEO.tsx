@@ -26,7 +26,7 @@ export default function SEO({
     "alternateName": "HRDLF",
     "url": "https://hrdlfcoin.com",
     "logo": "https://hrdlfcoin.com/images/official-skull-logo.jpg",
-    "foundingDate": "2007",
+    "foundingDate": "2006",
     "description": "Authentic streetwear brand with 18 years of history, bridging fashion and Web3 through the HRDLF Token. Trade on Moonshot app.",
     "sameAs": [
       "https://twitter.com/HardLifeApparel",

@@ -8,7 +8,7 @@
 
 ## Executive Summary
 
-HRDLF is not just another memecoin—it represents the digital evolution of Hardlife Apparel Company LTD, a brand with nearly two decades of authentic streetwear heritage and community impact. Born from the skateboarding culture of 2007 and backed by legends from the Bones Brigade to the Vans family, Hardlife has always stood for more than fashion. The HRDLF token extends this mission into the blockchain era, creating a decentralized community united by shared values of authenticity, resilience, and social responsibility.
+HRDLF is not just another memecoin—it represents the digital evolution of Hardlife Apparel Company LTD, a brand with nearly two decades of authentic streetwear heritage and community impact. Born from the skateboarding culture of 2006 and backed by legends from the Bones Brigade to the Vans family, Hardlife has always stood for more than fashion. The HRDLF token extends this mission into the blockchain era, creating a decentralized community united by shared values of authenticity, resilience, and social responsibility.
 
 This whitepaper outlines the vision, tokenomics, and roadmap for HRDLF—a cryptocurrency designed to fund charitable initiatives while building a global community of holders who believe in using blockchain technology for positive social impact.
 
@@ -32,9 +32,9 @@ This whitepaper outlines the vision, tokenomics, and roadmap for HRDLF—a crypt
 
 ## 1. Introduction: The Hardlife Story
 
-### Origins in Skateboarding Culture (2007)
+### Origins in Skateboarding Culture (2006)
 
-Hardlife Apparel Company was founded in 2007 during a pivotal moment in streetwear history. While many brands chased trends, Hardlife emerged from the authentic underground skateboarding scene, earning early recognition and support from legendary figures in the industry. The brand's connection to the original Bones Brigade skaters—pioneers who revolutionized skateboarding in the 1980s—and the Vans family provided both credibility and cultural legitimacy that money cannot buy.
+Hardlife Apparel Company was founded in 2006 during a pivotal moment in streetwear history. While many brands chased trends, Hardlife emerged from the authentic underground skateboarding scene, earning early recognition and support from legendary figures in the industry. The brand's connection to the original Bones Brigade skaters—pioneers who revolutionized skateboarding in the 1980s—and the Vans family provided both credibility and cultural legitimacy that money cannot buy.
 
 From its inception, Hardlife represented more than clothing. It embodied a lifestyle philosophy: resilience in the face of adversity, authenticity over commercialism, and community over individualism. These values attracted a dedicated following of skaters, artists, musicians, and urban culture enthusiasts who saw their own struggles and triumphs reflected in the brand.
 

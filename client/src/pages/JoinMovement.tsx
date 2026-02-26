@@ -322,7 +322,7 @@ export default function JoinMovement() {
                     with 18 years of history, real products, and connections to skateboarding legends.
                   </p>
                   <div className="text-sm mono" style={{ color: 'oklch(0.75 0.25 240)' }}>
-                    Est. 2007 • Philadelphia → Scottsdale → Norway
+                    Est. 2006 • Philadelphia → Scottsdale → Norway
                   </div>
                 </CardContent>
               </Card>

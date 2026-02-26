@@ -271,7 +271,7 @@ export default function Verify() {
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-neon-pink mt-1">▸</span>
-                          <span><strong>Brand History:</strong> 18 years of Hardlife Apparel heritage (2007-2025)</span>
+                          <span><strong>Brand History:</strong> 19 years of Hardlife Apparel heritage (2006-2025)</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-neon-green mt-1">▸</span>
@@ -349,7 +349,7 @@ export default function Verify() {
                       </div>
                       <div className="bg-background/80 p-4 rounded-md border border-border">
                         <div className="text-xs text-muted-foreground mb-1">ESTABLISHED</div>
-                        <div className="font-bold">2007 (18 years)</div>
+                        <div className="font-bold">2006 (19 years)</div>
                       </div>
                       <div className="bg-background/80 p-4 rounded-md border border-border">
                         <div className="text-xs text-muted-foreground mb-1">LOCATION</div>
@@ -366,8 +366,8 @@ export default function Verify() {
                         <strong className="text-foreground">Company History:</strong>
                       </p>
                       <ul className="space-y-2 text-sm text-muted-foreground">
-                        <li>• Founded in 2007 in Philadelphia skateboarding scene</li>
-                        <li>• 10 years of growth (2007-2017) building loyal community</li>
+                        <li>• Founded in 2006 in Philadelphia skateboarding scene</li>
+                        <li>• 11 years of growth (2006-2017) building loyal community</li>
                         <li>• Extensive charitable work: homeless youth, hunger relief, school supplies</li>
                         <li>• Reorganization period (2017-2026) maintaining brand integrity</li>
                         <li>• 2026 comeback with HRDLF token launch</li>

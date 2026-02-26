@@ -10,15 +10,15 @@ interface FAQItem {
 const faqs: FAQItem[] = [
   {
     question: "What is HRDLF Token?",
-    answer: "HRDLF is a cryptocurrency token built on the Solana blockchain that represents ownership in the Hardlife movement. It's backed by Hardlife Apparel Company LTD, an authentic streetwear brand with 18 years of history founded in Philadelphia in 2007. When you hold HRDLF, you're not just investing in crypto—you're joining a lifestyle movement that bridges streetwear culture and Web3 innovation."
+    answer: "HRDLF is a cryptocurrency token built on the Solana blockchain that represents ownership in the Hardlife movement. It's backed by Hardlife Apparel Company LTD, an authentic streetwear brand with 19 years of history founded in Philadelphia in 2006. When you hold HRDLF, you're not just investing in crypto—you're joining a lifestyle movement that bridges streetwear culture and Web3 innovation."
   },
   {
     question: "Who created HRDLF Token?",
-    answer: "HRDLF Token was designed by Brooks, the Founder and CEO of Hardlife Apparel Company LTD. Brooks started Hardlife in Philadelphia, PA in 2007, expanded the brand through Scottsdale, Arizona, and now operates from southern Norway. With 18 years of experience in streetwear and skate culture, Brooks brings authentic credibility to the Web3 space."
+    answer: "HRDLF Token was designed by Brooks, the Founder and CEO of Hardlife Apparel Company LTD. Brooks started Hardlife in Philadelphia, PA in 2006, expanded the brand through Scottsdale, Arizona, and now operates from southern Norway. With 19 years of experience in streetwear and skate culture, Brooks brings authentic credibility to the Web3 space."
   },
   {
     question: "Where is Hardlife Apparel Company based?",
-    answer: "Hardlife Apparel Company LTD was founded in Philadelphia, PA, USA in 2007, expanded through Scottsdale, Arizona, and is currently headquartered in southern Norway. This international presence reflects our global vision while maintaining authentic American streetwear roots. We serve a worldwide community of streetwear enthusiasts and crypto believers."
+    answer: "Hardlife Apparel Company LTD was founded in Philadelphia, PA, USA in 2006, expanded through Scottsdale, Arizona, and is currently headquartered in southern Norway. This international presence reflects our global vision while maintaining authentic American streetwear roots. We serve a worldwide community of streetwear enthusiasts and crypto believers."
   },
   {
     question: "Is Hardlife Apparel a registered company?",
@@ -34,7 +34,7 @@ const faqs: FAQItem[] = [
   },
   {
     question: "What makes HRDLF different from other memecoins?",
-    answer: "Unlike most memecoins, HRDLF is backed by a real brand with real products and a real community. Hardlife Apparel has been operating since 2007, creating authentic streetwear that represents resilience and urban culture. HRDLF token holders get exclusive benefits including early access to limited drops at HRDLF.com, discounts on merchandise, and governance rights in the brand's future direction. We also publish Hardwired Weekly newsletter and offer the Agent Mode AI automation course—creating a complete ecosystem."
+    answer: "Unlike most memecoins, HRDLF is backed by a real brand with real products and a real community. Hardlife Apparel has been operating since 2006, creating authentic streetwear that represents resilience and urban culture. HRDLF token holders get exclusive benefits including early access to limited drops at HRDLF.com, discounts on merchandise, and governance rights in the brand's future direction. We also publish Hardwired Weekly newsletter and offer the Agent Mode AI automation course—creating a complete ecosystem."
   },
   {
     question: "What is the HRDLF ecosystem?",
@@ -94,7 +94,7 @@ const faqs: FAQItem[] = [
   },
   {
     question: "What is the connection between HRDLF and skateboarding?",
-    answer: "Hardlife Apparel was born from skate culture in Philadelphia in 2007. Brooks, the founder, has deep roots in the skateboarding community and built the brand around the resilience and creativity of skate culture. HRDLF Token carries that DNA forward into Web3, supporting skateboarding initiatives and maintaining authentic connections to the skate community that inspired the brand."
+    answer: "Hardlife Apparel was born from skate culture in Philadelphia in 2006. Brooks, the founder, has deep roots in the skateboarding community and built the brand around the resilience and creativity of skate culture. HRDLF Token carries that DNA forward into Web3, supporting skateboarding initiatives and maintaining authentic connections to the skate community that inspired the brand."
   },
   {
     question: "Can I stake my HRDLF tokens?",
@@ -102,7 +102,7 @@ const faqs: FAQItem[] = [
   },
   {
     question: "How do I know HRDLF isn't a rug pull?",
-    answer: "Multiple factors protect against rug pulls: 1) Hardlife Apparel is a real company with 18 years of history and verifiable operations, 2) Brooks, the founder, is publicly identified with a real reputation to protect, 3) The token contract is fully transparent on Solscan, 4) Team tokens are locked with vesting schedules, 5) Liquidity is locked and verifiable on-chain. We operate with complete transparency because we're building for the long term."
+    answer: "Multiple factors protect against rug pulls: 1) Hardlife Apparel is a real company with 19 years of history and verifiable operations, 2) Brooks, the founder, is publicly identified with a real reputation to protect, 3) The token contract is fully transparent on Solscan, 4) Team tokens are locked with vesting schedules, 5) Liquidity is locked and verifiable on-chain. We operate with complete transparency because we're building for the long term."
   },
   {
     question: "What blockchain is HRDLF built on and why?",

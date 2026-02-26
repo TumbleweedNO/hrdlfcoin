@@ -43,7 +43,7 @@ const reviews: Review[] = [
     name: "Jasmine Patel",
     role: "Fashion Blogger & Crypto Enthusiast",
     rating: 5,
-    text: "HRDLF is bridging two worlds I love—streetwear and crypto. The brand has authentic history (since 2007) and the token gives holders real benefits. I'm excited to see where this goes. The Moonshot listing was just the beginning.",
+    text: "HRDLF is bridging two worlds I love—streetwear and crypto. The brand has authentic history (since 2006) and the token gives holders real benefits. I'm excited to see where this goes. The Moonshot listing was just the beginning.",
     date: "2025-01-05"
   },
   {

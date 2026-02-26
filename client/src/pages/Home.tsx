@@ -776,7 +776,7 @@ export default function Home() {
                 <p className="text-sm font-bold text-neon-pink mb-4">Founder & CEO | Creative Director</p>
                 <p className="text-lg text-muted-foreground mb-4 leading-relaxed">
                   An American entrepreneur with 18 years in streetwear and skate culture, Brooks launched 
-                  Hardlife Apparel in <strong>Philadelphia, PA in 2007</strong>, capturing the raw energy of East 
+                  Hardlife Apparel in <strong>Philadelphia, PA in 2006</strong>, capturing the raw energy of East 
                   Coast skate culture. After building the brand through <strong>Scottsdale, Arizona</strong>, 
                   he expanded operations to <strong>southern Norway</strong>, bringing a global perspective to the 
                   Hardlife movement.
@@ -840,7 +840,7 @@ export default function Home() {
                     </div>
                     <div>
                       <div className="text-muted-foreground">Founded</div>
-                      <div className="font-bold">Philadelphia, PA, USA (2007)</div>
+                      <div className="font-bold">Philadelphia, PA, USA (2006)</div>
                     </div>
                     <div>
                       <div className="text-muted-foreground">Current HQ</div>
@@ -1250,7 +1250,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-sm text-muted-foreground text-center md:text-left max-w-xs leading-relaxed">
-                Founded in Philadelphia (2007), expanded through Scottsdale, now operating globally from southern Norway. 
+                Founded in Philadelphia (2006), expanded through Scottsdale, now operating globally from southern Norway. 
                 Bringing authentic streetwear culture to Web3.
               </p>
             </div>
@@ -1261,7 +1261,7 @@ export default function Home() {
               <div className="flex flex-col gap-2 text-sm text-muted-foreground">
                 <div>
                   <div className="font-semibold text-foreground">Hardlife Apparel Company LTD</div>
-                  <div className="text-xs">Est. 2007</div>
+                  <div className="text-xs">Est. 2006</div>
                 </div>
                 <div className="text-xs">
                   📍 Founded: Philadelphia, PA, USA<br />

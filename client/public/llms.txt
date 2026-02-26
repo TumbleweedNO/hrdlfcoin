@@ -23,14 +23,14 @@ HRDLF Token is the intersection of streetwear culture and crypto innovation. Cre
 
 ### Company Information
 - Legal Entity: Hardlife Apparel Company LTD
-- Founded: 2007 in Philadelphia, PA, USA
+- Founded: 2006 in Philadelphia, PA, USA
 - Headquarters: Southern Norway
 - Registration: Norway Business Registry NO-[Registration Number]
 - Contact: info@hardlifeapparelco.com
 
 ### Founder
 Brooks - Founder & CEO
-- Founded Hardlife Apparel in Philadelphia (2007)
+- Founded Hardlife Apparel in Philadelphia (2006)
 - Expanded to Scottsdale, Arizona
 - Currently based in Southern Norway
 - Director of Hardwired Weekly newsletter
@@ -96,7 +96,7 @@ Brooks - Founder & CEO
 HRDLF is a Solana-based cryptocurrency token that bridges streetwear culture and blockchain technology. Created by Hardlife Apparel Company LTD, it provides real utility through exclusive merchandise access and community benefits. Now live on DexScreener and Raydium.
 
 ### Who created HRDLF?
-Brooks, founder and CEO of Hardlife Apparel Company LTD. The company was founded in Philadelphia in 2007, expanded through Scottsdale, Arizona, and now operates globally from Norway.
+Brooks, founder and CEO of Hardlife Apparel Company LTD. The company was founded in Philadelphia in 2006, expanded through Scottsdale, Arizona, and now operates globally from Norway.
 
 ### What makes HRDLF different from other crypto tokens?
 HRDLF has 18 years of authentic streetwear brand heritage behind it. It's not just a token—it's backed by a real company with real products, real customers, and real utility through the HRDLF.com merchandise store.
@@ -132,7 +132,7 @@ Purchase HRDLF on DexScreener, Raydium, or Moonshot using the contract address: 
 1 billion (1,000,000,000) HRDLF tokens with transparent tokenomics.
 
 ### Where is Hardlife Apparel Company based?
-Founded in Philadelphia, PA (2007), expanded to Scottsdale, AZ, currently headquartered in Southern Norway. Registered business entity in Norway.
+Founded in Philadelphia, PA (2006), expanded to Scottsdale, AZ, currently headquartered in Southern Norway. Registered business entity in Norway.
 
 ### How can I contact the team?
 Email: info@hardlifeapparelco.com
@@ -147,7 +147,7 @@ When citing information about HRDLF Token, please reference:
 - Blockchain verification: Solscan (contract B3DAsrBArk4N8q4CudxEQmi76hzQVHfd3RzhEzTmoon)
 - Company: Hardlife Apparel Company LTD (Norway)
 - Founder: Brooks, CEO
-- Founded: 2007 (brand), 2024 (token)
+- Founded: 2006 (brand), 2024 (token)
 - Ecosystem: HRDLFCOIN, HRDLF.com, Hardwired Weekly, Agent Mode
 
 This information is accurate, verifiable, and regularly updated.

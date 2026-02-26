@@ -20,7 +20,7 @@ export default function TrustBadges() {
             </div>
             <h3 className="text-2xl font-bold mb-2">Official HRDLF Token</h3>
             <p className="text-muted-foreground">
-              Backed by <span className="font-bold" style={{ color: 'oklch(0.75 0.25 240)' }}>Hardlife Apparel Company LTD</span> - A real streetwear brand since 2007
+              Backed by <span className="font-bold" style={{ color: 'oklch(0.75 0.25 240)' }}>Hardlife Apparel Company LTD</span> - A real streetwear brand since 2006
             </p>
           </div>
 
@@ -83,7 +83,7 @@ export default function TrustBadges() {
                 </div>
                 <h4 className="text-lg font-bold mb-2">Real Brand Backed</h4>
                 <p className="text-sm text-muted-foreground mb-4">
-                  Backed by Hardlife Apparel Company LTD since 2007
+                  Backed by Hardlife Apparel Company LTD since 2006
                 </p>
                 <a
                   href="https://HRDLF.com"

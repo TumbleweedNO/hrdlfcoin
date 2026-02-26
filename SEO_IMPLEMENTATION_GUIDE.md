@@ -106,7 +106,7 @@ Four types of schema markup injected:
   "alternateName": "HRDLF",
   "url": "https://hrdlfcoin.com",
   "logo": "...",
-  "foundingDate": "2007",
+  "foundingDate": "2006",
   "sameAs": [social media links],
   "contactPoint": {...}
 }
