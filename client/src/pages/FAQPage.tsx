@@ -6,11 +6,15 @@ import { AnnouncementBar } from "../components/AnnouncementBar";
 export default function FAQPage() {
   return (
     <div className="min-h-screen bg-background">
-      <SEO 
+      <SEO
         title="FAQ - Frequently Asked Questions | HRDLF Token"
         description="Get answers to all your questions about HRDLF Token, Hardlife Apparel Company, tokenomics, security, and how to participate in the streetwear crypto revolution."
         keywords="HRDLF FAQ, crypto questions, token information, Hardlife Apparel, streetwear blockchain, Solana token FAQ"
         canonicalUrl="https://hrdlfcoin.com/faq"
+        breadcrumbs={[
+          { name: "Home", url: "https://hrdlfcoin.com" },
+          { name: "FAQ", url: "https://hrdlfcoin.com/faq" }
+        ]}
       />
 
       {/* Header/Navigation */}

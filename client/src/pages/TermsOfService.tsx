@@ -6,7 +6,12 @@ export default function TermsOfService() {
       <SEO
         title="Mobile Terms of Service — HRDLF | Hardlife Apparel Company LTD"
         description="Mobile Terms of Service for HRDLF SMS/text messaging service by Hardlife Apparel Company LTD."
+        keywords="HRDLF terms of service, Hardlife Apparel terms, SMS terms, HRDLF token terms"
         canonicalUrl="https://hrdlfcoin.com/terms"
+        breadcrumbs={[
+          { name: "Home", url: "https://hrdlfcoin.com" },
+          { name: "Terms of Service", url: "https://hrdlfcoin.com/terms" }
+        ]}
       />
       <div className="min-h-screen bg-background text-foreground">
         {/* Header */}

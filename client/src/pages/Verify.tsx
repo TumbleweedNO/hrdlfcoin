@@ -12,11 +12,15 @@ export default function Verify() {
 
   return (
     <>
-      <SEO 
+      <SEO
         title="Official Verification — HRDLF Coin (HRDLF)"
         description="Complete documentation proving HRDLF is a legitimate cryptocurrency project backed by Hardlife Apparel Company LTD, an established streetwear brand with 18 years of history."
         keywords="HRDLF verify, HRDLF legitimacy, Hardlife Apparel proof, Solana token verification, HRDLF scam check"
         canonicalUrl="https://hrdlfcoin.com/verify"
+        breadcrumbs={[
+          { name: "Home", url: "https://hrdlfcoin.com" },
+          { name: "Verification Center", url: "https://hrdlfcoin.com/verify" }
+        ]}
       />
     <div className="min-h-screen bg-background text-foreground">
       {/* Navigation */}

@@ -6,7 +6,12 @@ export default function PrivacyPolicy() {
       <SEO
         title="Privacy Policy — HRDLF | Hardlife Apparel Company LTD"
         description="Privacy Policy for HRDLF (Hardlife Apparel Company LTD). Learn how we collect, use, and protect your personal information."
+        keywords="HRDLF privacy policy, Hardlife Apparel privacy, data protection, HRDLF token privacy"
         canonicalUrl="https://hrdlfcoin.com/privacy"
+        breadcrumbs={[
+          { name: "Home", url: "https://hrdlfcoin.com" },
+          { name: "Privacy Policy", url: "https://hrdlfcoin.com/privacy" }
+        ]}
       />
       <div className="min-h-screen bg-background text-foreground">
         {/* Header */}

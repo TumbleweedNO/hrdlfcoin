@@ -21,11 +21,15 @@ export default function JoinMovement() {
 
   return (
     <>
-      <SEO 
+      <SEO
         title="Join the HRDLF Movement - From a Tiny Seed, Something Great Can Grow"
         description="Join the grassroots HRDLF community. Born from skateboarding, built on friendship, driven by a dream to give back. Airdrops, giveaways, charitable programs, and more."
         keywords="HRDLF movement, join HRDLF, HRDLF community, skateboarding crypto, charitable token, Hardlife Apparel, grassroots crypto"
         canonicalUrl="https://hrdlfcoin.com/join"
+        breadcrumbs={[
+          { name: "Home", url: "https://hrdlfcoin.com" },
+          { name: "Join the Movement", url: "https://hrdlfcoin.com/join" }
+        ]}
       />
       <div className="min-h-screen bg-background text-foreground">
       {/* Navigation */}

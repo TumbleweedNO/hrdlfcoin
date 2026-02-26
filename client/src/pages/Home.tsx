@@ -1283,16 +1283,20 @@ export default function Home() {
                   <div className="text-xs">Crypto token on Solana</div>
                 </div>
                 <div>
+                  <a href="https://hardlifeapparelco.com" target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground hover:text-neon-blue transition-colors">Hardlife Apparel Co.</a>
+                  <div className="text-xs">Brand site &amp; editorial</div>
+                </div>
+                <div>
                   <a href="https://hrdlf.com" target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground hover:text-neon-pink transition-colors">HRDLF.com</a>
                   <div className="text-xs">Exclusive apparel store</div>
                 </div>
                 <div>
-                  <span className="font-semibold text-foreground">Hardwired Weekly</span>
-                  <div className="text-xs text-neon-yellow">Newsletter - Coming Soon</div>
+                  <a href="https://hardlifeapparelco.com/hardwired-weekly/" target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground hover:text-neon-yellow transition-colors">Hardwired Weekly</a>
+                  <div className="text-xs">Underground streetwear newsletter</div>
                 </div>
                 <div>
-                  <span className="font-semibold text-foreground">Agent Mode</span>
-                  <div className="text-xs text-neon-yellow">AI automation course - Coming Soon</div>
+                  <a href="/agent-mode" className="font-semibold text-foreground hover:text-neon-green transition-colors">Agent Mode</a>
+                  <div className="text-xs">AI automation course</div>
                 </div>
               </div>
             </div>
@@ -1305,7 +1309,9 @@ export default function Home() {
                 <a href="#tokenomics" className="text-muted-foreground hover:text-neon-pink transition-colors">Tokenomics</a>
                 <a href="#community" className="text-muted-foreground hover:text-neon-green transition-colors">Community</a>
                 <a href="/HRDLF_Whitepaper.md" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-neon-yellow transition-colors">Whitepaper</a>
-                <a href="https://reddit.com/r/HRDLF" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-neon-blue transition-colors">Reddit</a>
+                <a href="/join" className="text-muted-foreground hover:text-neon-green transition-colors">Join the Movement</a>
+                <a href="/privacy" className="text-muted-foreground hover:text-neon-blue transition-colors">Privacy Policy</a>
+                <a href="/terms" className="text-muted-foreground hover:text-neon-blue transition-colors">Terms of Service</a>
               </div>
             </div>
           </div>

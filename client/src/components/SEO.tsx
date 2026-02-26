@@ -1,5 +1,10 @@
 import { Helmet } from "react-helmet-async";
 
+interface BreadcrumbItem {
+  name: string;
+  url: string;
+}
+
 interface SEOProps {
   title?: string;
   description?: string;
@@ -7,6 +12,8 @@ interface SEOProps {
   ogImage?: string;
   ogType?: string;
   canonicalUrl?: string;
+  breadcrumbs?: BreadcrumbItem[];
+  additionalSchemas?: Record<string, unknown>[];
 }
 
 export default function SEO({
@@ -15,13 +22,16 @@ export default function SEO({
   keywords = "HRDLF token, Hardlife Apparel, streetwear crypto, Solana token, Moonshot, buy HRDLF, memecoin",
   ogImage = "https://hrdlfcoin.com/images/hrdlf-og-image.jpg",
   ogType = "website",
-  canonicalUrl = "https://hrdlfcoin.com"
+  canonicalUrl = "https://hrdlfcoin.com",
+  breadcrumbs,
+  additionalSchemas,
 }: SEOProps) {
-  
+
   // Organization Schema
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": "https://hrdlfcoin.com/#organization",
     "name": "Hardlife Apparel Company LTD",
     "alternateName": "HRDLF",
     "url": "https://hrdlfcoin.com",
@@ -29,12 +39,15 @@ export default function SEO({
     "foundingDate": "2006",
     "description": "Authentic streetwear brand with 18 years of history, bridging fashion and Web3 through the HRDLF Token. Trade on Moonshot app.",
     "sameAs": [
+      "https://hardlifeapparelco.com",
+      "https://hrdlf.com",
       "https://twitter.com/HardLifeApparel",
       "https://instagram.com/hardlifeapparel",
+      "https://tiktok.com/@hardlifeapparel",
       "https://discord.gg/buUpxPTe",
       "https://t.me/hardlifehrdlf",
-      "https://moonshot.com",
-      "https://solscan.io/token/B3DAsrBArk4N8q4CudxEQmi76hzQVHfd3RzhEzTmoon"
+      "https://dexscreener.com/solana/B3DAsrBArk4N8q4CudxEQmi76hzQVHfd3RzhEzTmoon",
+      "https://raydium.io/swap/?inputMint=sol&outputMint=B3DAsrBArk4N8q4CudxEQmi76hzQVHfd3RzhEzTmoon"
     ],
     "contactPoint": {
       "@type": "ContactPoint",
@@ -47,6 +60,7 @@ export default function SEO({
   const productSchema = {
     "@context": "https://schema.org",
     "@type": "Product",
+    "@id": "https://hrdlfcoin.com/#product",
     "name": "HRDLF Token",
     "url": "https://hrdlfcoin.com",
     "description": "Cryptocurrency token representing ownership in the Hardlife movement. Built on Solana blockchain. Buy instantly on Moonshot app for iOS and Android.",
@@ -83,6 +97,7 @@ export default function SEO({
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
+    "@id": "https://hrdlfcoin.com/#website",
     "name": "HRDLF Token",
     "url": "https://hrdlfcoin.com",
     "description": "Official website for HRDLF Token - The intersection of streetwear culture and crypto innovation. Buy on Moonshot app.",
@@ -97,19 +112,20 @@ export default function SEO({
     }
   };
 
-  // Breadcrumb Schema
+  // Breadcrumb Schema - dynamic based on props
+  const defaultBreadcrumbs: BreadcrumbItem[] = [
+    { name: "Home", url: "https://hrdlfcoin.com" }
+  ];
+  const breadcrumbItems = breadcrumbs || defaultBreadcrumbs;
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://hrdlfcoin.com",
-        "url": "https://hrdlfcoin.com"
-      }
-    ]
+    "itemListElement": breadcrumbItems.map((item, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "name": item.name,
+      "item": item.url
+    }))
   };
 
   // FinancialProduct Schema for better crypto representation
@@ -146,7 +162,10 @@ export default function SEO({
     <Helmet>
       {/* Google Search Console Verification */}
       <meta name="google-site-verification" content="1FOXM-XicDQ2t-Ae4O0fqwyEdUDFZ-pnWguG6cTtenM" />
-      
+
+      {/* Bing Webmaster Verification */}
+      <meta name="msvalidate.01" content="PENDING_BING_VERIFICATION_CODE" />
+
       {/* Primary Meta Tags */}
       <title>{title}</title>
       <meta name="title" content={title} />
@@ -201,6 +220,8 @@ export default function SEO({
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
       <link rel="dns-prefetch" href="https://moonshot.com" />
       <link rel="dns-prefetch" href="https://solscan.io" />
+      <link rel="dns-prefetch" href="https://hardlifeapparelco.com" />
+      <link rel="dns-prefetch" href="https://hrdlf.com" />
 
       {/* Schema.org Structured Data */}
       <script type="application/ld+json">
@@ -221,6 +242,11 @@ export default function SEO({
       <script type="application/ld+json">
         {JSON.stringify(mobileAppSchema)}
       </script>
+      {additionalSchemas?.map((schema, index) => (
+        <script key={`additional-schema-${index}`} type="application/ld+json">
+          {JSON.stringify(schema)}
+        </script>
+      ))}
     </Helmet>
   );
 }

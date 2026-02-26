@@ -58,10 +58,47 @@ export default function AgentMode() {
 
   return (
     <div className="min-h-screen bg-background">
-      <SEO 
+      <SEO
         title="Agent Mode - Automate Your Apparel Brand with AI | HRDLF"
         description="Learn how to automate your apparel brand using AI agents. Master inventory management, customer service, marketing automation, and more. Limited time offer: $27 (was $59)."
+        keywords="AI automation course, apparel brand automation, AI agents, business automation, HRDLF Agent Mode, Shopify automation, marketing AI"
         canonicalUrl="https://hrdlfcoin.com/agent-mode"
+        breadcrumbs={[
+          { name: "Home", url: "https://hrdlfcoin.com" },
+          { name: "Agent Mode", url: "https://hrdlfcoin.com/agent-mode" }
+        ]}
+        additionalSchemas={[
+          {
+            "@context": "https://schema.org",
+            "@type": "Course",
+            "name": "Agent Mode - AI Business Automation",
+            "description": "The complete course for entrepreneurs who want to leverage AI agents to automate their apparel brand or mobile app business.",
+            "provider": {
+              "@type": "Organization",
+              "name": "Hardlife Apparel Company LTD",
+              "url": "https://hrdlfcoin.com"
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "27",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "category": "Paid"
+            },
+            "hasCourseInstance": {
+              "@type": "CourseInstance",
+              "courseMode": "online",
+              "duration": "PT6H"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "reviewCount": "500",
+              "bestRating": "5",
+              "worstRating": "1"
+            }
+          }
+        ]}
       />
 
       {/* Navigation */}

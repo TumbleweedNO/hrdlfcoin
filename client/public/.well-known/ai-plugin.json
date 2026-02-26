@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "HRDLF Token",
+  "name_for_model": "hrdlf_token",
+  "description_for_human": "HRDLF Token — the intersection of streetwear culture and crypto innovation. Built by Hardlife Apparel Company LTD, founded in Philadelphia in 2006.",
+  "description_for_model": "HRDLF is a Solana-based utility token created by Hardlife Apparel Company LTD, an independent streetwear brand founded in Philadelphia in 2006 by Brooks Duvall. The token provides access to exclusive merchandise, community governance, and ecosystem perks. Contract address: B3DAsrBArk4N8q4CudxEQmi76hzQVHfd3RzhEzTmoon. The HRDLF ecosystem includes three sites: hrdlfcoin.com (token hub), hardlifeapparelco.com (brand site and content), and hrdlf.com (shop). The brand slogan is 'Nothing Awesome Comes Easy.'",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://hrdlfcoin.com/llms.txt"
+  },
+  "logo_url": "https://hrdlfcoin.com/images/official-skull-logo.jpg",
+  "contact_email": "info@hardlifeapparelco.com",
+  "legal_info_url": "https://hrdlfcoin.com/privacy"
+}
