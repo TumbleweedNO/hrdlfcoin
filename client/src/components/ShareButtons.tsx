@@ -103,7 +103,7 @@ export default function ShareButtons({ variant = "hero" }: ShareButtonsProps) {
           }}
         >
           <Share2 size={20} className="mr-2 group-hover:scale-110 transition-transform" />
-          Twitter/X
+          SPREAD THE WORD
         </Button>
         <Button
           variant="outline"
@@ -116,7 +116,7 @@ export default function ShareButtons({ variant = "hero" }: ShareButtonsProps) {
           }}
         >
           <Send size={20} className="mr-2 group-hover:scale-110 transition-transform" />
-          Telegram
+          JOIN THE CHANNEL
         </Button>
         <Button
           variant="outline"
@@ -129,7 +129,7 @@ export default function ShareButtons({ variant = "hero" }: ShareButtonsProps) {
           }}
         >
           <MessageCircle size={20} className="mr-2 group-hover:scale-110 transition-transform" />
-          Discord
+          ENTER THE COMMUNITY
         </Button>
         <Button
           variant="outline"
@@ -144,12 +144,12 @@ export default function ShareButtons({ variant = "hero" }: ShareButtonsProps) {
           {copied ? (
             <>
               <Check size={20} className="mr-2" />
-              Copied!
+              COPIED!
             </>
           ) : (
             <>
               <Copy size={20} className="mr-2 group-hover:scale-110 transition-transform" />
-              Copy Link
+              COPY & SHARE
             </>
           )}
         </Button>

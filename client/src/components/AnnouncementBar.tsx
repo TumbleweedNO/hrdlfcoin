@@ -1,79 +1,77 @@
-import { useState } from "react";
-import { Copy, Check, ExternalLink } from "lucide-react";
+import { useState, useEffect } from "react";
 
-const SOLANA_MINT = "B3DAsrBArk4N8q4CudxEQmi76hzQVHfd3RzhEzTmoon";
+const messages = [
+  {
+    text: "🔴 FIRST 100 WALLETS IN THE ARCHIVE PERMANENTLY → CLAIM YOURS NOW",
+    href: "#buy",
+    external: false,
+  },
+  {
+    text: "⚡ COIN HOLDERS GET 48HR EARLY ACCESS ON EVERY HRDLF DROP → SEE WHAT THEY GET",
+    href: "https://hardlifeapparelco.com/inner-circle/",
+    external: true,
+  },
+  {
+    text: "📦 HARDWIRED WEEKLY — FREE DROP ACCESS EVERY THURSDAY → GET HARDWIRED",
+    href: "https://hardlifeapparelco.com/hardwired-weekly/",
+    external: true,
+  },
+];
 
 export function AnnouncementBar() {
-  const [copied, setCopied] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [visible, setVisible] = useState(true);
+  const [dismissed, setDismissed] = useState(() => {
+    return sessionStorage.getItem("ab_dismissed") === "true";
+  });
 
-  const handleCopy = async () => {
-    try {
-      await navigator.clipboard.writeText(SOLANA_MINT);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    } catch (err) {
-      console.error("Failed to copy:", err);
-    }
-  };
+  useEffect(() => {
+    if (dismissed) return;
+    const interval = setInterval(() => {
+      setVisible(false);
+      setTimeout(() => {
+        setCurrentIndex((prev) => (prev + 1) % messages.length);
+        setVisible(true);
+      }, 300);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [dismissed]);
+
+  if (dismissed) return null;
+
+  const msg = messages[currentIndex];
 
   return (
-    <div className="w-full bg-gradient-to-r from-[#0a0a0a] via-[#111111] to-[#0a0a0a] border-b border-neon-blue/30 py-2 px-4">
-      <div className="container mx-auto">
-        {/* Line 1 - Company Info */}
-        <div className="text-center text-xs sm:text-sm text-muted-foreground mb-1">
-          <span className="font-semibold text-foreground">HardLife Apparel Company LTD</span>
-          <span className="mx-1">—</span>
-          <span>official team behind HRDLF Coin (HRDLF).</span>
-        </div>
-        
-        {/* Line 2 - Mint Address + Actions */}
-        <div className="flex flex-wrap items-center justify-center gap-2 text-xs">
-          <span className="text-muted-foreground">Solana Mint:</span>
-          <code className="bg-background/50 px-2 py-0.5 rounded text-[10px] sm:text-xs font-mono text-neon-blue break-all">
-            {SOLANA_MINT}
-          </code>
-          
-          {/* Copy Button */}
-          <button
-            onClick={handleCopy}
-            className="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-neon-blue/20 hover:bg-neon-blue/30 text-neon-blue transition-colors text-xs font-medium"
-          >
-            {copied ? (
-              <>
-                <Check size={12} />
-                <span>Copied!</span>
-              </>
-            ) : (
-              <>
-                <Copy size={12} />
-                <span>Copy</span>
-              </>
-            )}
-          </button>
-          
-          {/* Divider */}
-          <span className="text-muted-foreground hidden sm:inline">•</span>
-          
-          {/* Links */}
-          <div className="flex items-center gap-2 flex-wrap justify-center">
-            <a
-              href="/verify"
-              className="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-neon-green/20 hover:bg-neon-green/30 text-neon-green transition-colors text-xs font-medium"
-            >
-              <span>Verify</span>
-            </a>
-            <a
-              href={`https://moonshot.com/${SOLANA_MINT}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-neon-pink/20 hover:bg-neon-pink/30 text-neon-pink transition-colors text-xs font-medium"
-            >
-              <span>Moonshot</span>
-              <ExternalLink size={10} />
-            </a>
-          </div>
-        </div>
-      </div>
+    <div
+      className="w-full flex items-center justify-center relative"
+      style={{
+        backgroundColor: "#060606",
+        height: "36px",
+      }}
+    >
+      <a
+        href={msg.href}
+        target={msg.external ? "_blank" : undefined}
+        rel={msg.external ? "noopener noreferrer" : undefined}
+        className="text-xs sm:text-sm font-bold tracking-wide text-center px-8 transition-opacity duration-300"
+        style={{
+          color: "#FFD700",
+          opacity: visible ? 1 : 0,
+        }}
+      >
+        {msg.text}
+      </a>
+      <button
+        onClick={() => {
+          setDismissed(true);
+          sessionStorage.setItem("ab_dismissed", "true");
+        }}
+        className="absolute right-3 top-1/2 -translate-y-1/2 text-sm hover:opacity-70 transition-opacity"
+        style={{ color: "#FFD700" }}
+        aria-label="Close announcement"
+      >
+        ×
+      </button>
     </div>
   );
 }

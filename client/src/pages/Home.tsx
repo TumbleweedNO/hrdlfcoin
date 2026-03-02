@@ -106,17 +106,17 @@ export default function Home() {
             <a href="/verify" className="text-sm font-semibold hover:text-neon-green transition-colors hidden sm:block">VERIFY</a>
             <a href="/faq" className="text-sm font-semibold hover:text-neon-blue transition-colors hidden sm:block">FAQ</a>
             <a href="/HRDLF_Whitepaper.md" target="_blank" rel="noopener noreferrer" className="text-sm font-semibold hover:text-neon-yellow transition-colors hidden md:block">WHITEPAPER</a>
-            <Button 
-              size="sm" 
-              className="font-bold neon-glow hidden sm:flex"
-              style={{ 
-                backgroundColor: 'oklch(0.75 0.25 240)',
-                color: 'oklch(0.05 0.01 240)',
-                boxShadow: '0 0 20px oklch(0.75 0.25 240)'
+            <Button
+              size="sm"
+              className="font-black hidden sm:flex"
+              style={{
+                backgroundColor: '#FFD700',
+                color: '#000000',
+                boxShadow: '0 0 20px rgba(255,215,0,0.5)'
               }}
               onClick={() => window.open(moonshotLink, '_blank')}
             >
-              BUY NOW
+              CLAIM YOUR PIECE
             </Button>
             
             {/* Mobile Menu */}
@@ -177,72 +177,67 @@ export default function Home() {
           <PriceTicker />
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button 
-              size="lg" 
-              className="text-lg font-black px-8 py-6 neon-glow group relative overflow-hidden"
-              style={{ 
-                backgroundColor: 'oklch(0.80 0.30 90)',
-                color: 'oklch(0.15 0.01 90)',
-                boxShadow: '0 0 30px oklch(0.80 0.30 90)'
+          <div className="flex flex-col items-center justify-center gap-3">
+            <Button
+              size="lg"
+              className="text-lg font-black px-10 py-6 group"
+              style={{
+                backgroundColor: '#FFD700',
+                color: '#000000',
+                boxShadow: '0 0 30px rgba(255,215,0,0.5)'
               }}
               onClick={() => window.open(moonshotLink, '_blank')}
             >
-              <span className="absolute -top-1 -right-1 bg-red-500 text-white text-[10px] font-black px-2 py-0.5 rounded-bl-lg animate-pulse">LIVE</span>
-              BUY ON MOONSHOT
-              <Rocket className="ml-2 group-hover:translate-y-[-2px] transition-transform" size={20} />
+              CLAIM YOUR PIECE →
             </Button>
-            <Button 
-              size="lg" 
-              className="text-lg font-black px-8 py-6 neon-glow group"
-              style={{ 
-                backgroundColor: 'oklch(0.75 0.25 240)',
-                color: 'oklch(0.05 0.01 240)',
-                boxShadow: '0 0 30px oklch(0.75 0.25 240)'
-              }}
-              onClick={() => window.open(`https://dexscreener.com/solana/${contractAddress}`, '_blank')}
-            >
-              VIEW ON DEXSCREENER
-              <TrendingUp className="ml-2 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button 
-              size="lg" 
+            <p className="font-mono text-[11px]" style={{ color: '#888888' }}>
+              Only 16 of 100 founding wallet spots remaining.
+            </p>
+            <Button
+              size="lg"
               variant="outline"
-              className="text-lg font-bold px-8 py-6 border-2 neon-border hidden lg:flex"
-              style={{ 
-                borderColor: 'oklch(0.65 0.30 340)',
-                color: 'oklch(0.65 0.30 340)'
+              className="text-lg font-bold px-8 py-6 border-2 group"
+              style={{
+                borderColor: '#00D4FF',
+                color: '#00D4FF',
+                backgroundColor: 'transparent',
               }}
-              onClick={() => window.open(solscanLink, '_blank')}
+              onClick={() => window.open('https://hardlifeapparelco.com/archive/', '_blank')}
             >
-              VIEW ON SOLSCAN
-              <ExternalLink className="ml-2" size={20} />
+              SEE WHO'S ALREADY IN →
             </Button>
+            <button
+              onClick={() => window.open(`https://dexscreener.com/solana/${contractAddress}`, '_blank')}
+              className="text-sm mt-1 transition-opacity hover:opacity-80"
+              style={{ color: '#666666' }}
+            >
+              Not ready? Watch the price move first.
+            </button>
           </div>
 
           {/* App Store Badges */}
           <div className="flex items-center justify-center gap-4 mt-6">
-            <a 
+            <a
               href="https://apps.apple.com/us/app/moonshot/id6503993131"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:scale-105 transition-transform"
             >
-              <img 
-                src="/images/app-store-badge.png" 
-                alt="Download Moonshot on App Store" 
+              <img
+                src="/images/app-store-badge.png"
+                alt="Download Moonshot on App Store"
                 className="h-10 sm:h-12 object-contain"
               />
             </a>
-            <a 
+            <a
               href="https://play.google.com/store/apps/details?id=money.moonshot.app"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:scale-105 transition-transform"
             >
-              <img 
-                src="/images/google-play-badge.png" 
-                alt="Get Moonshot on Google Play" 
+              <img
+                src="/images/google-play-badge.png"
+                alt="Get Moonshot on Google Play"
                 className="h-10 sm:h-12 object-contain"
               />
             </a>
@@ -250,38 +245,6 @@ export default function Home() {
 
           {/* Share Buttons */}
           <ShareButtons variant="hero" />
-
-          {/* Ecosystem CTAs */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
-            <a href="/join">
-              <Button 
-                size="lg" 
-                className="text-lg font-black px-8 py-6 neon-glow group"
-                style={{ 
-                  backgroundColor: 'oklch(0.85 0.28 145)',
-                  color: 'oklch(0.05 0.01 240)',
-                  boxShadow: '0 0 30px oklch(0.85 0.28 145)'
-                }}
-              >
-                JOIN THE MOVEMENT
-                <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
-              </Button>
-            </a>
-            <Button 
-              size="lg" 
-              variant="outline"
-              className="text-lg font-bold px-8 py-6 border-2 neon-border group"
-              style={{ 
-                borderColor: 'oklch(0.65 0.30 340)',
-                color: 'oklch(0.65 0.30 340)'
-              }}
-              onClick={() => window.open('https://hrdlf.com', '_blank')}
-            >
-              GET YOUR GEAR
-              <ExternalLink className="ml-2 group-hover:scale-110 transition-transform" size={20} />
-            </Button>
-
-          </div>
 
           {/* Token Visual */}
           <div className="mt-16">
@@ -955,6 +918,44 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Coin Holder Benefits Section */}
+      <section className="py-20 relative">
+        <div className="container px-4">
+          <div className="max-w-3xl mx-auto p-10 rounded-none" style={{
+            backgroundColor: '#0D0D0D',
+            borderLeft: '3px solid #00D4FF',
+          }}>
+            <h2 className="font-black mb-8" style={{ fontSize: '28px', color: '#FFFFFF' }}>
+              COIN HOLDERS GET MORE THAN EVERYONE ELSE
+            </h2>
+            <div className="space-y-0 mb-8" style={{ fontFamily: 'monospace', fontSize: '12px', lineHeight: 2, color: '#CCCCCC' }}>
+              <p>→ 48-hour early access on every HRDLF drop</p>
+              <p>→ Priority on limited edition and numbered pieces</p>
+              <p>→ First 100 wallets go in The Archive permanently</p>
+              <p>→ Insider updates before public announcements</p>
+              <p>→ Founding member pricing on future HRDLF products</p>
+              <p>→ Direct line to the founder — no middlemen</p>
+            </div>
+            <a
+              href="https://hardlifeapparelco.com/inner-circle/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block font-black px-8 py-3 text-sm transition-opacity hover:opacity-90"
+              style={{ backgroundColor: '#FF006E', color: '#FFFFFF' }}
+            >
+              VIEW ALL COIN HOLDER BENEFITS →
+            </a>
+            <div className="mt-8 p-4 text-center text-sm font-bold" style={{
+              color: '#FFD700',
+              backgroundColor: '#080808',
+              border: '1px solid rgba(255,215,0,0.3)',
+            }}>
+              ⚡ Be among the first 100 coin holders and your wallet goes in The Archive permanently.
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Tokenomics Section */}
       <section id="tokenomics" className="py-24 relative scanlines">
         <div className="container px-4">
@@ -1078,7 +1079,7 @@ export default function Home() {
                   >
                     <input
                       type="email"
-                      placeholder="Enter your email"
+                      placeholder="your@email.com"
                       value={newsletterEmail}
                       onChange={(e) => setNewsletterEmail(e.target.value)}
                       required
@@ -1090,17 +1091,16 @@ export default function Home() {
                       type="submit"
                       disabled={newsletterMutation.isPending}
                       className="font-bold px-6 py-3 neon-glow"
-                      style={{ 
+                      style={{
                         backgroundColor: 'oklch(0.85 0.28 145)',
                         color: 'oklch(0.05 0.01 240)'
                       }}
                     >
-                      {newsletterMutation.isPending ? 'JOINING...' : 'JOIN NOW'}
-                      <ArrowRight className="ml-2" size={18} />
+                      {newsletterMutation.isPending ? 'JOINING...' : 'GET IN BEFORE THE DROP →'}
                     </Button>
                   </form>
                   <p className="text-xs text-muted-foreground text-center mt-4">
-                    No spam. Unsubscribe anytime. Your email syncs with Beehiiv.
+                    Every Thursday. Drop access. Coin updates. The story. Free.
                   </p>
                 </CardContent>
               </Card>
@@ -1133,19 +1133,33 @@ export default function Home() {
             <p className="text-2xl mb-12 text-muted-foreground">
               Every great investment starts with a decision. Make yours now.
             </p>
-            <Button 
-              size="lg" 
-              className="text-2xl font-black px-12 py-8 neon-glow group"
-              style={{ 
-                backgroundColor: 'oklch(0.75 0.25 240)',
-                color: 'oklch(0.05 0.01 240)',
-                boxShadow: '0 0 40px oklch(0.75 0.25 240)'
-              }}
-              onClick={() => window.open(moonshotLink, '_blank')}
-            >
-              BUY HRDLF NOW
-              <Rocket className="ml-3 group-hover:translate-y-[-4px] transition-transform" size={32} />
-            </Button>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <Button
+                size="lg"
+                className="text-xl font-black px-10 py-8 group"
+                style={{
+                  backgroundColor: '#FF006E',
+                  color: '#FFFFFF',
+                  boxShadow: '0 0 30px rgba(255,0,110,0.4)'
+                }}
+                onClick={() => window.open(moonshotLink, '_blank')}
+              >
+                BECOME A FOUNDING MEMBER →
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="text-lg font-bold px-8 py-6 border-2 group"
+                style={{
+                  borderColor: '#00D4FF',
+                  color: '#00D4FF',
+                  backgroundColor: 'transparent',
+                }}
+                onClick={() => window.open('https://hrdlf.com', '_blank')}
+              >
+                WEAR THE BRAND THAT STARTED IT →
+              </Button>
+            </div>
             
             {/* Disclaimer */}
             <div className="mt-8 max-w-2xl mx-auto">
@@ -1237,7 +1251,32 @@ export default function Home() {
         ]}
       />
 
-
+      {/* Ecosystem Partner Section */}
+      <section className="py-16 relative">
+        <div className="container px-4">
+          <div className="max-w-2xl mx-auto text-center">
+            <p style={{
+              fontSize: '9px',
+              letterSpacing: '3px',
+              color: '#444444',
+              textTransform: 'uppercase',
+              marginBottom: '12px',
+            }}>
+              ECOSYSTEM PARTNER
+            </p>
+            <p style={{ fontSize: '11px', color: '#555555', marginBottom: '8px' }}>
+              This space is reserved for a brand that belongs in the HRDLF universe.
+            </p>
+            <a
+              href="mailto:advertise@hardlifeapparelco.com"
+              style={{ fontSize: '11px', color: '#666666' }}
+              className="hover:underline"
+            >
+              Inquire about partnership.
+            </a>
+          </div>
+        </div>
+      </section>
 
       {/* Footer */}
       <footer className="py-16 border-t border-neon-blue/30 bg-background/50">
@@ -1315,6 +1354,10 @@ export default function Home() {
                 <a href="/join" className="text-muted-foreground hover:text-neon-green transition-colors">Join the Movement</a>
                 <a href="/privacy" className="text-muted-foreground hover:text-neon-blue transition-colors">Privacy Policy</a>
                 <a href="/terms" className="text-muted-foreground hover:text-neon-blue transition-colors">Terms of Service</a>
+                <a href="https://hardlifeapparelco.com/archive/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-neon-yellow transition-colors">THE ARCHIVE</a>
+                <a href="https://hardlifeapparelco.com/inner-circle/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-neon-pink transition-colors">INNER CIRCLE</a>
+                <a href="https://hardlifeapparelco.com/hardwired-weekly/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-neon-green transition-colors">HARDWIRED WEEKLY</a>
+                <a href="mailto:advertise@hardlifeapparelco.com" className="text-muted-foreground hover:text-neon-blue transition-colors">ADVERTISE</a>
               </div>
             </div>
           </div>
@@ -1446,7 +1489,7 @@ export default function Home() {
       <LiveChat />
       
       {/* Email Capture Popup - triggers after 5 seconds */}
-      <EmailPopup triggerType="timed" delay={5000} />
+      <EmailPopup triggerType="timed" delay={8000} />
     </div>
     </>
   );

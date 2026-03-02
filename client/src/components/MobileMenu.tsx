@@ -113,16 +113,16 @@ export default function MobileMenu({ moonshotLink }: MobileMenuProps) {
               size="lg"
               className="font-bold mt-6 w-full text-lg py-6"
               style={{
-                backgroundColor: 'oklch(0.75 0.25 240)',
-                color: 'oklch(0.05 0.01 240)',
-                boxShadow: '0 0 20px oklch(0.75 0.25 240)'
+                backgroundColor: '#FFD700',
+                color: '#000000',
+                boxShadow: '0 0 20px rgba(255,215,0,0.5)'
               }}
               onClick={() => {
                 window.open(moonshotLink, '_blank');
                 closeMenu();
               }}
             >
-              BUY NOW
+              CLAIM YOUR PIECE
             </Button>
           </div>
         </nav>
