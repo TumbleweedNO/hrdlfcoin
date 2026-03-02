@@ -86,7 +86,10 @@ export default function Home() {
 
   return (
     <>
-      <SEO />
+      <SEO
+        ogTitle="HRDLFcoin — Own a Piece of the Hardlife Movement"
+        ogDescription="Philadelphia streetwear meets Solana blockchain. Est. 2006. First 100 coin holders go in The Archive permanently. Claim your piece."
+      />
       <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-neon-blue/30" aria-label="Main navigation">

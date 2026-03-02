@@ -9,6 +9,8 @@ interface SEOProps {
   title?: string;
   description?: string;
   keywords?: string;
+  ogTitle?: string;
+  ogDescription?: string;
   ogImage?: string;
   ogType?: string;
   canonicalUrl?: string;
@@ -17,15 +19,19 @@ interface SEOProps {
 }
 
 export default function SEO({
-  title = "HRDLF Token - Buy on Moonshot | Streetwear Meets Crypto",
-  description = "Buy HRDLF token on Moonshot app. 18 years of streetwear culture meets Solana blockchain. Official token by Hardlife Apparel Company LTD.",
-  keywords = "HRDLF token, Hardlife Apparel, streetwear crypto, Solana token, Moonshot, buy HRDLF, memecoin",
-  ogImage = "https://hrdlfcoin.com/images/hrdlf-og-image.jpg",
+  title = "HRDLFcoin | Streetwear Brand Token on Solana | Own a Piece of Hardlife Apparel Company",
+  description = "HRDLFcoin — the official token of Hardlife Apparel Company on Solana. Own a piece of Philadelphia's most independent streetwear brand. Est. 2006. First 100 holders go in The Archive permanently.",
+  keywords = "HRDLF coin, streetwear token Solana, fashion brand crypto token, streetwear digital collectible, buy HRDLF token, Hardlife Apparel coin, Solana streetwear token, fashion brand community coin, HRDLF founding member coin",
+  ogTitle,
+  ogDescription,
+  ogImage = "https://hrdlfcoin.com/assets/og-coin.jpg",
   ogType = "website",
   canonicalUrl = "https://hrdlfcoin.com",
   breadcrumbs,
   additionalSchemas,
 }: SEOProps) {
+  const resolvedOgTitle = ogTitle || title;
+  const resolvedOgDescription = ogDescription || description;
 
   // Organization Schema
   const organizationSchema = {
@@ -61,33 +67,28 @@ export default function SEO({
     "@context": "https://schema.org",
     "@type": "Product",
     "@id": "https://hrdlfcoin.com/#product",
-    "name": "HRDLF Token",
+    "name": "HRDLFcoin",
     "url": "https://hrdlfcoin.com",
-    "description": "Cryptocurrency token representing ownership in the Hardlife movement. Built on Solana blockchain. Buy instantly on Moonshot app for iOS and Android.",
+    "description": "The official token of Hardlife Apparel Company on Solana. Own a piece of Philadelphia's most independent streetwear brand. Est. 2006.",
     "image": "https://hrdlfcoin.com/images/official-skull-logo.jpg",
     "brand": {
       "@type": "Brand",
-      "name": "Hardlife Apparel Company LTD",
+      "name": "Hardlife Apparel Company",
       "url": "https://hrdlf.com"
     },
+    "additionalProperty": [
+      { "@type": "PropertyValue", "name": "Blockchain", "value": "Solana" },
+      { "@type": "PropertyValue", "name": "Brand Founded", "value": "2006" },
+      { "@type": "PropertyValue", "name": "Founding Holders Archive", "value": "First 100 wallets permanently recorded" }
+    ],
     "offers": {
       "@type": "Offer",
-      "price": "0.00000517816",
-      "priceCurrency": "USD",
       "availability": "https://schema.org/InStock",
       "url": "https://moonshot.com",
-      "priceValidUntil": "2026-12-31",
       "seller": {
         "@type": "Organization",
-        "name": "Hardlife Apparel Company LTD"
+        "name": "Hardlife Apparel Company"
       }
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "reviewCount": "10",
-      "bestRating": "5",
-      "worstRating": "1"
     },
     "sku": "HRDLF-TOKEN-SOL",
     "mpn": "B3DAsrBArk4N8q4CudxEQmi76hzQVHfd3RzhEzTmoon"
@@ -176,19 +177,19 @@ export default function SEO({
       {/* Open Graph / Facebook */}
       <meta property="og:type" content={ogType} />
       <meta property="og:url" content={canonicalUrl} />
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
+      <meta property="og:title" content={resolvedOgTitle} />
+      <meta property="og:description" content={resolvedOgDescription} />
       <meta property="og:image" content={ogImage} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
-      <meta property="og:site_name" content="HRDLF Token" />
+      <meta property="og:site_name" content="HRDLFcoin" />
       <meta property="og:locale" content="en_US" />
 
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content={canonicalUrl} />
-      <meta property="twitter:title" content={title} />
-      <meta property="twitter:description" content={description} />
+      <meta property="twitter:title" content={resolvedOgTitle} />
+      <meta property="twitter:description" content={resolvedOgDescription} />
       <meta property="twitter:image" content={ogImage} />
       <meta property="twitter:site" content="@HardLifeApparel" />
       <meta property="twitter:creator" content="@HardLifeApparel" />
