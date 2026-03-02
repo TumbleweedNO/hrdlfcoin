@@ -929,12 +929,12 @@ export default function Home() {
               COIN HOLDERS GET MORE THAN EVERYONE ELSE
             </h2>
             <div className="space-y-0 mb-8" style={{ fontFamily: 'monospace', fontSize: '12px', lineHeight: 2, color: '#CCCCCC' }}>
-              <p>→ 48-hour early access on every HRDLF drop</p>
-              <p>→ Priority on limited edition and numbered pieces</p>
-              <p>→ First 100 wallets go in The Archive permanently</p>
-              <p>→ Insider updates before public announcements</p>
-              <p>→ Founding member pricing on future HRDLF products</p>
-              <p>→ Direct line to the founder — no middlemen</p>
+              <p>→ 48-hour early access on every HRDLF drop — before the public ever sees it</p>
+              <p>→ Exclusive colorways never released to non-holders</p>
+              <p>→ Physical HRDLF token holder card mailed directly to you</p>
+              <p>→ Wallet address listed in The Archive permanently</p>
+              <p>→ Invite-only drops that never appear publicly</p>
+              <p>→ Monthly dispatch from Brooks directly — not the newsletter</p>
             </div>
             <a
               href="https://hardlifeapparelco.com/inner-circle/"
@@ -950,7 +950,7 @@ export default function Home() {
               backgroundColor: '#080808',
               border: '1px solid rgba(255,215,0,0.3)',
             }}>
-              ⚡ Be among the first 100 coin holders and your wallet goes in The Archive permanently.
+              ⚡ Be among the first 100 coin holders. Your wallet goes in The Archive. Permanently. 16 founding spots remaining.
             </div>
           </div>
         </div>

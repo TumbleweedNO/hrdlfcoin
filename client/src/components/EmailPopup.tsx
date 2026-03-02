@@ -136,10 +136,9 @@ export default function EmailPopup({
           className="text-center mb-6"
           style={{ fontSize: "13px", color: "#AAAAAA", lineHeight: 1.6 }}
         >
-          The first 100 coin holders go in The Archive permanently. They get
-          48-hour early access on every HRDLF drop, priority on limited
-          editions, and insider updates before anyone else. This isn't a
-          newsletter — it's a head start.
+          First 100 coin holders get early drops, physical token card, and
+          their wallet in The Archive permanently. Enter your email for your
+          spot in the queue.
         </p>
 
         {/* Form */}
