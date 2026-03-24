@@ -431,7 +431,7 @@ export default function Verify() {
                     variant="outline"
                     className="border-2"
                     style={{ borderColor: 'oklch(0.65 0.30 340)', color: 'oklch(0.65 0.30 340)' }}
-                    onClick={() => window.open('https://instagram.com/hardlifeapparel', '_blank')}
+                    onClick={() => window.open('https://instagram.com/hardlifeapparelco', '_blank')}
                   >
                     <ExternalLink className="mr-2 w-4 h-4" />
                     Instagram

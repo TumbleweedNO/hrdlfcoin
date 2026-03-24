@@ -1379,7 +1379,7 @@ export default function Home() {
                   </svg>
                 </a>
                 <a
-                  href="https://instagram.com/hardlifeapparel"
+                  href="https://instagram.com/hardlifeapparelco"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 rounded-lg bg-card/50 backdrop-blur-sm border-2 flex items-center justify-center hover:border-neon-pink transition-all neon-glow-hover"

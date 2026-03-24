@@ -66,7 +66,7 @@ const faqs: FAQItem[] = [
   },
   {
     question: "How can I join the HRDLF community?",
-    answer: "Join our growing community on Discord (3,482+ members), follow us on Twitter/X (@HardLifeApparel), Instagram (@hardlifeapparel), Telegram (t.me/hardlifehrdlf), and Reddit (r/HRDLF). Subscribe to our Hardwired Weekly newsletter for exclusive updates. The HRDLF community is a tight-knit group of streetwear enthusiasts, crypto believers, and culture creators who share the Hardlife vision."
+    answer: "Join our growing community on Discord (3,482+ members), follow us on Twitter/X (@HardLifeApparel), Instagram (@hardlifeapparelco), Telegram (t.me/hardlifehrdlf), and Reddit (r/HRDLF). Subscribe to our Hardwired Weekly newsletter for exclusive updates. The HRDLF community is a tight-knit group of streetwear enthusiasts, crypto believers, and culture creators who share the Hardlife vision."
   },
   {
     question: "How can I contact Hardlife Apparel?",
