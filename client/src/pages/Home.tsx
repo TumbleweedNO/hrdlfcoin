@@ -23,6 +23,7 @@ import LiveChat from "@/components/LiveChat";
 import TrustBadges from "@/components/TrustBadges";
 import { AnnouncementBar } from "@/components/AnnouncementBar";
 import EmailPopup from "@/components/EmailPopup";
+import ReturnBar from "@/components/ReturnBar";
 
 export default function Home() {
   const [glitchText, setGlitchText] = useState("HRDLF");
@@ -91,8 +92,11 @@ export default function Home() {
         ogDescription="Philadelphia streetwear meets Solana blockchain. Est. 2006. First 100 coin holders go in The Archive permanently. Claim your piece."
       />
       <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+      {/* Return Bar */}
+      <ReturnBar />
+
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-neon-blue/30" aria-label="Main navigation">
+      <nav className="fixed top-[32px] left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-neon-blue/30" aria-label="Main navigation">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <img src="/images/official-skull-logo.jpg" alt="HRDLF Logo" className="w-12 h-12 object-contain" />
@@ -126,7 +130,7 @@ export default function Home() {
       </nav>
       
       {/* Announcement Bar */}
-      <div className="fixed top-[72px] left-0 right-0 z-40">
+      <div className="fixed top-[104px] left-0 right-0 z-40">
         <AnnouncementBar />
       </div>
 
