@@ -4,6 +4,7 @@ import { Shield, CheckCircle2, ExternalLink, FileText, Building2, Globe, Users, 
 import { Link } from "wouter";
 import { AnnouncementBar } from "@/components/AnnouncementBar";
 import SEO from "@/components/SEO";
+import AuthorityLinks from "@/components/AuthorityLinks";
 
 export default function Verify() {
   const contractAddress = "B3DAsrBArk4N8q4CudxEQmi76hzQVHfd3RzhEzTmoon";
@@ -14,7 +15,7 @@ export default function Verify() {
     <>
       <SEO
         title="Official Verification — HRDLF Coin (HRDLF)"
-        description="Complete documentation proving HRDLF is a legitimate cryptocurrency project backed by Hardlife Apparel Company LTD, an established streetwear brand with 18 years of history."
+        description="Complete documentation proving HRDLF is a legitimate cryptocurrency project backed by Hardlife Apparel Company LTD, an established streetwear brand with 20 years of history."
         keywords="HRDLF verify, HRDLF legitimacy, Hardlife Apparel proof, Solana token verification, HRDLF scam check"
         canonicalUrl="https://hrdlfcoin.com/verify"
         breadcrumbs={[
@@ -98,7 +99,7 @@ export default function Verify() {
                 <CardContent className="p-6 text-center">
                   <Building2 className="w-12 h-12 mx-auto mb-4 neon-glow" style={{ color: 'oklch(0.85 0.28 145)' }} />
                   <h3 className="font-bold mb-2">Real Business</h3>
-                  <p className="text-sm text-muted-foreground">18-year streetwear brand</p>
+                  <p className="text-sm text-muted-foreground">20-year streetwear brand</p>
                 </CardContent>
               </Card>
 
@@ -275,7 +276,7 @@ export default function Verify() {
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-neon-pink mt-1">▸</span>
-                          <span><strong>Brand History:</strong> 19 years of Hardlife Apparel heritage (2006-2025)</span>
+                          <span><strong>Brand History:</strong> 20 years of Hardlife Apparel heritage (2006-2026)</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-neon-green mt-1">▸</span>
@@ -353,7 +354,7 @@ export default function Verify() {
                       </div>
                       <div className="bg-background/80 p-4 rounded-md border border-border">
                         <div className="text-xs text-muted-foreground mb-1">ESTABLISHED</div>
-                        <div className="font-bold">2006 (19 years)</div>
+                        <div className="font-bold">2006 (20 years)</div>
                       </div>
                       <div className="bg-background/80 p-4 rounded-md border border-border">
                         <div className="text-xs text-muted-foreground mb-1">LOCATION</div>
@@ -504,6 +505,9 @@ export default function Verify() {
         </div>
       </section>
 
+      {/* Authority Links */}
+      <AuthorityLinks exclude={["https://hrdlfcoin.com/verify"]} />
+
       {/* Contact & Support */}
       <section className="py-16 bg-background/50">
         <div className="container px-4">
@@ -547,7 +551,7 @@ export default function Verify() {
       {/* Footer */}
       <footer className="py-8 border-t border-neon-blue/20">
         <div className="container px-4 text-center">
-          <p className="text-sm font-bold mb-2" style={{ color: 'oklch(0.75 0.25 240)' }}>© 2025 Hardlife Apparel Company LTD</p>
+          <p className="text-sm font-bold mb-2" style={{ color: 'oklch(0.75 0.25 240)' }}>© 2026 Hardlife Apparel Company LTD</p>
           <p className="text-xs text-muted-foreground">A legitimate streetwear brand backing a real crypto token</p>
           
           {/* Trust Line */}

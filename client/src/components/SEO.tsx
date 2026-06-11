@@ -19,8 +19,8 @@ interface SEOProps {
 }
 
 export default function SEO({
-  title = "HRDLFcoin | Streetwear Brand Token on Solana | Own a Piece of Hardlife Apparel Company",
-  description = "HRDLFcoin — the official token of Hardlife Apparel Company on Solana. Own a piece of Philadelphia's most independent streetwear brand. Est. 2006. First 100 holders go in The Archive permanently.",
+  title = "HRDLFcoin | AI-Powered Streetwear Token on Solana | Hardlife Apparel Company",
+  description = "HRDLFcoin — the official token of Hardlife Apparel Company on Solana. 20 years of streetwear heritage rebuilt with AI. First 100 holders go in The Archive permanently.",
   keywords = "HRDLF coin, streetwear token Solana, fashion brand crypto token, streetwear digital collectible, buy HRDLF token, Hardlife Apparel coin, Solana streetwear token, fashion brand community coin, HRDLF founding member coin",
   ogTitle,
   ogDescription,
@@ -33,17 +33,38 @@ export default function SEO({
   const resolvedOgTitle = ogTitle || title;
   const resolvedOgDescription = ogDescription || description;
 
+  // Person Schema — Brooks Duvall (Founder)
+  const personSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://hrdlfcoin.com/#founder",
+    "name": "Brooks Duvall",
+    "jobTitle": "Founder & CEO",
+    "worksFor": { "@id": "https://hrdlfcoin.com/#organization" },
+    "knowsAbout": [
+      "Streetwear",
+      "AI-Powered Business Operations",
+      "Solana",
+      "Web3",
+      "Independent Brand Building"
+    ],
+    "sameAs": [
+      "https://hardlifeapparelco.com/about/"
+    ]
+  };
+
   // Organization Schema
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
     "@id": "https://hrdlfcoin.com/#organization",
-    "name": "Hardlife Apparel Company LTD",
+    "name": "Hardlife Apparel Company",
     "alternateName": "HRDLF",
     "url": "https://hrdlfcoin.com",
     "logo": "https://hrdlfcoin.com/images/official-skull-logo.jpg",
     "foundingDate": "2006",
-    "description": "Authentic streetwear brand with 18 years of history, bridging fashion and Web3 through the HRDLF Token. Trade on Moonshot app.",
+    "description": "Independent streetwear brand with 20 years of heritage, rebuilt with AI-powered operations and bridging fashion and Web3 through the HRDLF Token on Solana.",
+    "founder": { "@id": "https://hrdlfcoin.com/#founder" },
     "sameAs": [
       "https://hardlifeapparelco.com",
       "https://hrdlf.com",
@@ -225,6 +246,9 @@ export default function SEO({
       <link rel="dns-prefetch" href="https://hrdlf.com" />
 
       {/* Schema.org Structured Data */}
+      <script type="application/ld+json">
+        {JSON.stringify(personSchema)}
+      </script>
       <script type="application/ld+json">
         {JSON.stringify(organizationSchema)}
       </script>

@@ -192,7 +192,7 @@ export default function TermsOfService() {
         {/* Footer */}
         <footer className="border-t border-neon-blue/30 py-8 px-4">
           <div className="container mx-auto text-center text-muted-foreground text-sm">
-            <p>© 2025 Hardlife Apparel Company LTD. All rights reserved.</p>
+            <p>© 2026 Hardlife Apparel Company LTD. All rights reserved.</p>
             <div className="mt-4 flex justify-center gap-6">
               <a href="/" className="hover:text-neon-blue transition-colors">Home</a>
               <a href="/privacy" className="hover:text-neon-blue transition-colors">Privacy Policy</a>

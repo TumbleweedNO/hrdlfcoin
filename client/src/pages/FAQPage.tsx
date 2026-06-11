@@ -2,6 +2,7 @@ import { Link } from "wouter";
 import FAQ from "../components/FAQ";
 import SEO from "../components/SEO";
 import { AnnouncementBar } from "../components/AnnouncementBar";
+import AuthorityLinks from "../components/AuthorityLinks";
 
 export default function FAQPage() {
   return (
@@ -91,7 +92,7 @@ export default function FAQPage() {
                 <svg className="w-5 h-5 text-neon-blue" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
                 </svg>
-                <span>Updated January 2025</span>
+                <span>Updated June 2026</span>
               </div>
             </div>
           </div>
@@ -104,6 +105,9 @@ export default function FAQPage() {
           <FAQ />
         </div>
       </section>
+
+      {/* Authority Links */}
+      <AuthorityLinks exclude={["https://hrdlfcoin.com/faq"]} />
 
       {/* CTA Section */}
       <section className="py-20 relative overflow-hidden">
@@ -150,7 +154,7 @@ export default function FAQPage() {
         <div className="container">
           <div className="text-center">
             <p className="text-sm text-muted-foreground mb-2">
-              © 2025 Hardlife Apparel Company LTD. All rights reserved.
+              © 2026 Hardlife Apparel Company LTD. All rights reserved.
             </p>
             <p className="mono text-xs text-muted-foreground mb-2">
               Registered in Norway | Business Reg: NO-[Registration Number]

@@ -2,6 +2,11 @@ import { useState, useEffect } from "react";
 
 const messages = [
   {
+    text: "🔥 SPRING EXIT SALE — 25% OFF EVERYTHING → Code: SPRINGEXIT25 at hrdlf.com — Ends June 30",
+    href: "https://hrdlf.com",
+    external: true,
+  },
+  {
     text: "🔴 FIRST 100 WALLETS IN THE ARCHIVE PERMANENTLY → CLAIM YOURS NOW",
     href: "#buy",
     external: false,

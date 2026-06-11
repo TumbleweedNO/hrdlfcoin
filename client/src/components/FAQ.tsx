@@ -5,16 +5,18 @@ import { Card, CardContent } from "@/components/ui/card";
 interface FAQItem {
   question: string;
   answer: string;
+  sourceUrl?: string;
+  sourceLabel?: string;
 }
 
 const faqs: FAQItem[] = [
   {
     question: "What is HRDLF Token?",
-    answer: "HRDLF is a cryptocurrency token built on the Solana blockchain that represents ownership in the Hardlife movement. It's backed by Hardlife Apparel Company LTD, an authentic streetwear brand with 19 years of history founded in Philadelphia in 2006. When you hold HRDLF, you're not just investing in crypto—you're joining a lifestyle movement that bridges streetwear culture and Web3 innovation."
+    answer: "HRDLF is a cryptocurrency token built on the Solana blockchain that represents ownership in the Hardlife movement. It's backed by Hardlife Apparel Company, an authentic streetwear brand with 20 years of history founded in Philadelphia in 2006. The brand is currently being rebuilt using AI-powered operations — from content and SEO to customer engagement — making it one of the first independent streetwear brands to document a full AI rebuild. When you hold HRDLF, you're not just investing in crypto—you're joining a lifestyle movement that bridges streetwear culture and Web3 innovation."
   },
   {
     question: "Who created HRDLF Token?",
-    answer: "HRDLF Token was designed by Brooks, the Founder and CEO of Hardlife Apparel Company LTD. Brooks started Hardlife in Philadelphia, PA in 2006, expanded the brand through Scottsdale, Arizona, and now operates from southern Norway. With 19 years of experience in streetwear and skate culture, Brooks brings authentic credibility to the Web3 space."
+    answer: "HRDLF Token was designed by Brooks Duvall, the Founder and CEO of Hardlife Apparel Company. Brooks started Hardlife in Philadelphia, PA in 2006, expanded the brand through Scottsdale, Arizona, and now operates from southern Norway. With 20 years of experience in streetwear and skate culture, Brooks brings authentic credibility to the Web3 space. The entire 2026 brand rebuild is being documented as an AI case study at hardlifeapparelco.com — covering how a solo founder uses Claude, automation, and AI agents to run every aspect of an independent brand."
   },
   {
     question: "Where is Hardlife Apparel Company based?",
@@ -30,11 +32,15 @@ const faqs: FAQItem[] = [
   },
   {
     question: "How can I verify the HRDLF token contract?",
-    answer: "You can verify the HRDLF token contract on Solscan.io by searching for our contract address: B3DAsrBArk4N8q4CudxEQmi76hzQVHfd3RzhEzTmoon. This blockchain explorer shows all transactions, holder distribution, liquidity, and contract details. The contract is fully transparent and auditable by anyone. Always verify the contract address before purchasing to ensure you're buying authentic HRDLF tokens."
+    answer: "You can verify the HRDLF token contract on Solscan.io by searching for our contract address: B3DAsrBArk4N8q4CudxEQmi76hzQVHfd3RzhEzTmoon. This blockchain explorer shows all transactions, holder distribution, liquidity, and contract details. The contract is fully transparent and auditable by anyone. Always verify the contract address before purchasing to ensure you're buying authentic HRDLF tokens.",
+    sourceUrl: "https://solscan.io/token/B3DAsrBArk4N8q4CudxEQmi76hzQVHfd3RzhEzTmoon",
+    sourceLabel: "Solscan — HRDLF Token Contract"
   },
   {
     question: "What makes HRDLF different from other memecoins?",
-    answer: "Unlike most memecoins, HRDLF is backed by a real brand with real products and a real community. Hardlife Apparel has been operating since 2006, creating authentic streetwear that represents resilience and urban culture. HRDLF token holders get exclusive benefits including early access to limited drops at HRDLF.com, discounts on merchandise, and governance rights in the brand's future direction. We also publish Hardwired Weekly newsletter and offer the Agent Mode AI automation course—creating a complete ecosystem."
+    answer: "Unlike most memecoins, HRDLF is backed by a real brand with real products and a real community. Hardlife Apparel has been operating since 2006, creating authentic streetwear that represents resilience and urban culture. HRDLF token holders get exclusive benefits including early access to limited drops at HRDLF.com, discounts on merchandise, and governance rights in the brand's future direction. We also publish Hardwired Weekly newsletter and offer the Agent Mode AI automation course—creating a complete ecosystem. The brand's AI rebuild is being documented as a public case study, making HRDLF one of the most transparent projects in crypto.",
+    sourceUrl: "https://hardlifeapparelco.com/about/",
+    sourceLabel: "Hardlife Apparel — Brand Story & AI Rebuild"
   },
   {
     question: "What is the HRDLF ecosystem?",
@@ -50,7 +56,9 @@ const faqs: FAQItem[] = [
   },
   {
     question: "What are the tokenomics?",
-    answer: "HRDLF has a total supply of 1 billion tokens. The distribution is designed for long-term sustainability: community allocation, liquidity pool, team tokens (locked), and marketing/development funds. There are no hidden wallets or rug-pull mechanisms. All tokenomics details are transparent and available in our whitepaper and on-chain via Solscan."
+    answer: "HRDLF has a total supply of 1 billion tokens. The distribution is designed for long-term sustainability: community allocation, liquidity pool, team tokens (locked), and marketing/development funds. There are no hidden wallets or rug-pull mechanisms. All tokenomics details are transparent and available in our whitepaper and on-chain via Solscan.",
+    sourceUrl: "https://hrdlfcoin.com/HRDLF_Whitepaper.md",
+    sourceLabel: "HRDLF Whitepaper — Full Tokenomics"
   },
   {
     question: "What benefits do HRDLF holders get?",
@@ -70,7 +78,7 @@ const faqs: FAQItem[] = [
   },
   {
     question: "How can I contact Hardlife Apparel?",
-    answer: "You can reach us at contact@hrdlfcoin.com for general inquiries, partnership opportunities, or support questions. We're also active on all our social media channels (Twitter, Instagram, Discord, Telegram) and respond to community members regularly. For press inquiries or business partnerships, please use the same email with 'PRESS' or 'PARTNERSHIP' in the subject line."
+    answer: "You can reach us at info@hardlifeapparelco.com for general inquiries, partnership opportunities, or support questions. We're also active on all our social media channels (Twitter, Instagram, Discord, Telegram) and respond to community members regularly. For press inquiries or business partnerships, please use the same email with 'PRESS' or 'PARTNERSHIP' in the subject line."
   },
   {
     question: "What is Hardwired Weekly?",
@@ -102,7 +110,9 @@ const faqs: FAQItem[] = [
   },
   {
     question: "How do I know HRDLF isn't a rug pull?",
-    answer: "Multiple factors protect against rug pulls: 1) Hardlife Apparel is a real company with 19 years of history and verifiable operations, 2) Brooks, the founder, is publicly identified with a real reputation to protect, 3) The token contract is fully transparent on Solscan, 4) Team tokens are locked with vesting schedules, 5) Liquidity is locked and verifiable on-chain. We operate with complete transparency because we're building for the long term."
+    answer: "Multiple factors protect against rug pulls: 1) Hardlife Apparel is a real company with 20 years of history and verifiable operations, 2) Brooks Duvall, the founder, is publicly identified with a real reputation to protect, 3) The token contract is fully transparent on Solscan, 4) Team tokens are locked with vesting schedules, 5) Liquidity is locked and verifiable on-chain. We operate with complete transparency because we're building for the long term.",
+    sourceUrl: "https://hrdlfcoin.com/verify",
+    sourceLabel: "HRDLF Verification Center"
   },
   {
     question: "What blockchain is HRDLF built on and why?",
@@ -190,6 +200,20 @@ export default function FAQ() {
                   {openIndex === index && (
                     <div id={`faq-answer-${index}`} className="mt-4 text-muted-foreground leading-relaxed">
                       {faq.answer}
+                      {faq.sourceUrl && faq.sourceLabel && (
+                        <div className="mt-3 pt-2 border-t border-border/50">
+                          <a
+                            href={faq.sourceUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-xs font-semibold hover:underline"
+                            style={{ color: 'oklch(0.75 0.25 240)' }}
+                            onClick={(e) => e.stopPropagation()}
+                          >
+                            Source: {faq.sourceLabel}
+                          </a>
+                        </div>
+                      )}
                     </div>
                   )}
                 </CardContent>
@@ -203,7 +227,7 @@ export default function FAQ() {
               Still have questions? We're here to help.
             </p>
             <a 
-              href="mailto:contact@hrdlfcoin.com" 
+              href="mailto:info@hardlifeapparelco.com" 
               className="inline-block px-6 py-3 rounded-lg font-bold transition-all neon-glow-hover"
               style={{ 
                 backgroundColor: 'oklch(0.75 0.25 240)',

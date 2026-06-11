@@ -14,6 +14,7 @@ import FAQ from "@/components/FAQ";
 import Reviews from "@/components/Reviews";
 import SEO from "@/components/SEO";
 import BackToTop from "@/components/BackToTop";
+import AuthorityLinks from "@/components/AuthorityLinks";
 import MobileMenu from "@/components/MobileMenu";
 import PriceTicker from "@/components/PriceTicker";
 import PriceDisplay from "@/components/PriceDisplay";
@@ -55,6 +56,47 @@ export default function Home() {
   const moonshotLink = "https://moonshot.com";
   const solscanLink = "https://solscan.io/token/B3DAsrBArk4N8q4CudxEQmi76hzQVHfd3RzhEzTmoon";
 
+  // HowTo Schema — How to Buy HRDLF Token
+  const howToSchema = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to Buy HRDLF Token",
+    "description": "Step-by-step guide to purchasing HRDLF token on the Solana blockchain using the Moonshot app.",
+    "totalTime": "PT10M",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "position": 1,
+        "name": "Get a Solana Wallet",
+        "text": "Download a Solana-compatible wallet such as Phantom, Backpack, or Solflare from your app store."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 2,
+        "name": "Buy SOL",
+        "text": "Purchase SOL on any major exchange like Coinbase or Binance."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 3,
+        "name": "Transfer SOL to Your Wallet",
+        "text": "Send your SOL from the exchange to your Solana wallet address."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 4,
+        "name": "Download the Moonshot App",
+        "text": "Install the Moonshot app from the iOS App Store or Google Play Store and create an account."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 5,
+        "name": "Swap SOL for HRDLF",
+        "text": "Search for HRDLF in Moonshot or paste contract address B3DAsrBArk4N8q4CudxEQmi76hzQVHfd3RzhEzTmoon, then swap your SOL for HRDLF tokens."
+      }
+    ]
+  };
+
   // Glitch effect on title
   useEffect(() => {
     const glitchChars = "HRDLF█▓▒░";
@@ -88,8 +130,9 @@ export default function Home() {
   return (
     <>
       <SEO
-        ogTitle="HRDLFcoin — Own a Piece of the Hardlife Movement"
-        ogDescription="Philadelphia streetwear meets Solana blockchain. Est. 2006. First 100 coin holders go in The Archive permanently. Claim your piece."
+        ogTitle="HRDLFcoin — AI-Powered Streetwear Token on Solana"
+        ogDescription="20 years of Philadelphia streetwear heritage rebuilt with AI. First 100 coin holders go in The Archive permanently. Claim your piece."
+        additionalSchemas={[howToSchema]}
       />
       <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       {/* Return Bar */}
@@ -140,7 +183,7 @@ export default function Home() {
         <div 
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: 'url(/images/hero-bg-revised.png)',
+            backgroundImage: 'url(/images/hero-bg-revised.jpg)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
@@ -312,14 +355,14 @@ export default function Home() {
                 </h2>
 
                 <p className="text-xl sm:text-2xl text-center text-muted-foreground mb-8 max-w-3xl mx-auto">
-                  18 years of streetwear legacy meets blockchain innovation. 
+                  20 years of streetwear legacy meets blockchain innovation.
                   <span className="font-bold" style={{ color: 'oklch(0.65 0.30 340)' }}> Be part of something bigger.</span>
                 </p>
 
                 {/* Key Stats */}
                 <div className="grid sm:grid-cols-3 gap-6 mb-10">
                   <div className="text-center p-6 rounded-xl bg-background/50 border-2" style={{ borderColor: 'oklch(0.75 0.25 240 / 0.5)' }}>
-                    <div className="text-4xl font-black mb-2 neon-glow" style={{ color: 'oklch(0.75 0.25 240)' }}>18</div>
+                    <div className="text-4xl font-black mb-2 neon-glow" style={{ color: 'oklch(0.75 0.25 240)' }}>20</div>
                     <div className="text-sm font-bold text-muted-foreground">YEARS OF BRAND LEGACY</div>
                   </div>
                   <div className="text-center p-6 rounded-xl bg-background/50 border-2" style={{ borderColor: 'oklch(0.65 0.30 340 / 0.5)' }}>
@@ -745,7 +788,7 @@ export default function Home() {
                 <h3 className="text-2xl font-bold mb-4">Brooks</h3>
                 <p className="text-sm font-bold text-neon-pink mb-4">Founder & CEO | Creative Director</p>
                 <p className="text-lg text-muted-foreground mb-4 leading-relaxed">
-                  An American entrepreneur with 18 years in streetwear and skate culture, Brooks launched 
+                  An American entrepreneur with 20 years in streetwear and skate culture, Brooks launched 
                   Hardlife Apparel in <strong>Philadelphia, PA in 2006</strong>, capturing the raw energy of East 
                   Coast skate culture. After building the brand through <strong>Scottsdale, Arizona</strong>, 
                   he expanded operations to <strong>southern Norway</strong>, bringing a global perspective to the 
@@ -1025,7 +1068,7 @@ export default function Home() {
         <div 
           className="absolute inset-0 opacity-20"
           style={{
-            backgroundImage: 'url(/images/community-bg.png)',
+            backgroundImage: 'url(/images/community-bg.jpg)',
             backgroundSize: 'cover',
             backgroundPosition: 'center'
           }}
@@ -1242,7 +1285,7 @@ export default function Home() {
             name: "David Kim",
             role: "Tech Investor",
             company: "Web3 Builder",
-            content: "The combination of real streetwear brand with crypto utility is brilliant. Brooks has been building for 18 years - this isn't a fly-by-night project.",
+            content: "The combination of real streetwear brand with crypto utility is brilliant. Brooks has been building for 20 years - this isn't a fly-by-night project.",
             rating: 5
           },
           {
@@ -1281,6 +1324,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Authority Links */}
+      <AuthorityLinks />
 
       {/* Footer */}
       <footer className="py-16 border-t border-neon-blue/30 bg-background/50">
@@ -1395,7 +1441,7 @@ export default function Home() {
                   </svg>
                 </a>
                 <a
-                  href="https://discord.gg/Xg6x5Buc8"
+                  href="https://discord.gg/buUpxPTe"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 rounded-lg bg-card/50 backdrop-blur-sm border-2 flex items-center justify-center hover:border-neon-green transition-all neon-glow-hover"
@@ -1407,7 +1453,7 @@ export default function Home() {
                   </svg>
                 </a>
                 <a
-                  href="https://t.me/hrdlfcoin1"
+                  href="https://t.me/hardlifehrdlf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 rounded-lg bg-card/50 backdrop-blur-sm border-2 flex items-center justify-center hover:border-neon-yellow transition-all neon-glow-hover"
@@ -1454,7 +1500,7 @@ export default function Home() {
 
           {/* Bottom Bar */}
           <div className="pt-8 border-t border-neon-blue/20 text-center">
-            <p className="text-sm font-bold mb-2" style={{ color: 'oklch(0.75 0.25 240)' }}>© 2025 Hardlife Apparel Company LTD</p>
+            <p className="text-sm font-bold mb-2" style={{ color: 'oklch(0.75 0.25 240)' }}>© 2026 Hardlife Apparel Company LTD</p>
             <p className="text-xs text-muted-foreground mb-2">A legitimate streetwear brand backing a real crypto token</p>
             <p className="mono text-xs text-muted-foreground mb-2">Contact: info@hardlifeapparelco.com | Based in Norway</p>
             <p className="mono text-xs text-muted-foreground">Cryptocurrency investments carry risk. Trade responsibly.</p>

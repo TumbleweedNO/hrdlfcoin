@@ -22,7 +22,7 @@ const reviews: Review[] = [
     name: "Sarah Rodriguez",
     role: "Crypto Trader & Fashion Enthusiast",
     rating: 5,
-    text: "Most memecoins are just hype with no substance. HRDLF is different—it's backed by an 18-year-old streetwear brand with actual customers and products. The exclusive holder benefits (early drops, discounts, governance) make this more than just a speculative play.",
+    text: "Most memecoins are just hype with no substance. HRDLF is different—it's backed by a 20-year-old streetwear brand with actual customers and products. The exclusive holder benefits (early drops, discounts, governance) make this more than just a speculative play.",
     date: "2025-01-12"
   },
   {

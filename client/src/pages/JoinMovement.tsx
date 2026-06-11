@@ -10,13 +10,14 @@ import { Heart, Users, Gift, Rocket, ArrowRight, ExternalLink, Sparkles } from "
 import { Link } from "wouter";
 import SEO from "@/components/SEO";
 import { AnnouncementBar } from "@/components/AnnouncementBar";
+import AuthorityLinks from "@/components/AuthorityLinks";
 
 export default function JoinMovement() {
   const contractAddress = "B3DAsrBArk4N8q4CudxEQmi76hzQVHfd3RzhEzTmoon";
   const moonshotLink = "https://dex.moonshot.cc/solana/B3DAsrBArk4N8q4CudxEQmi76hzQVHfd3RzhEzTmoon";
   const fourthwallLink = "https://hrdlf.com";
-  const telegramLink = "https://t.me/hrdlfcoin1";
-  const discordLink = "https://discord.gg/Xg6x5Buc8";
+  const telegramLink = "https://t.me/hardlifehrdlf";
+  const discordLink = "https://discord.gg/buUpxPTe";
   const twitterLink = "https://twitter.com/HardLifeApparel";
 
   return (
@@ -323,7 +324,7 @@ export default function JoinMovement() {
                   <h3 className="text-2xl font-bold mb-4">Real Brand, Real History</h3>
                   <p className="text-muted-foreground mb-4">
                     This isn't a random memecoin. It's backed by Hardlife Apparel Company—a streetwear brand 
-                    with 18 years of history, real products, and connections to skateboarding legends.
+                    with 20 years of history, real products, and connections to skateboarding legends.
                   </p>
                   <div className="text-sm mono" style={{ color: 'oklch(0.75 0.25 240)' }}>
                     Est. 2006 • Philadelphia → Scottsdale → Norway
@@ -498,6 +499,9 @@ export default function JoinMovement() {
         </div>
       </section>
 
+      {/* Authority Links */}
+      <AuthorityLinks exclude={["https://hrdlfcoin.com/join"]} />
+
       {/* Community Links */}
       <section className="py-16 border-t border-neon-blue/30">
         <div className="container px-4">
@@ -559,7 +563,7 @@ export default function JoinMovement() {
       <footer className="py-8 border-t border-neon-blue/20">
         <div className="container px-4 text-center">
           <p className="text-sm text-muted-foreground mb-2">
-            © 2025 Hardlife Apparel Company LTD. All rights reserved.
+            © 2026 Hardlife Apparel Company LTD. All rights reserved.
           </p>
           <p className="mono text-xs text-muted-foreground mb-4">
             #NothingAwesomeComesEasy 💀
